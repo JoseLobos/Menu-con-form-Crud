@@ -125,18 +125,18 @@
         <asp:ListItem>Katterine Campos</asp:ListItem>
     </asp:DropDownList>
 </p>
-    <p class="text-left">
+<p class="text-left">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label17" runat="server" Text="Nivel Laboral"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownList4" runat="server">
-            <asp:ListItem>1</asp:ListItem>
-            <asp:ListItem>2</asp:ListItem>
-            <asp:ListItem>3</asp:ListItem>
-            <asp:ListItem>4</asp:ListItem>
-            <asp:ListItem>5</asp:ListItem>
-            <asp:ListItem>6</asp:ListItem>
-        </asp:DropDownList>
+    <asp:DropDownList ID="DropDownList4" runat="server">
+        <asp:ListItem>1</asp:ListItem>
+        <asp:ListItem>2</asp:ListItem>
+        <asp:ListItem>3</asp:ListItem>
+        <asp:ListItem>4</asp:ListItem>
+        <asp:ListItem>5</asp:ListItem>
+        <asp:ListItem>6</asp:ListItem>
+    </asp:DropDownList>
 </p>
 <p>
     &nbsp;</p>

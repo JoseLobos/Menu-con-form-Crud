@@ -188,6 +188,7 @@ namespace Pagina_web_sistema_de_ventas
             cmd.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show(" El empleado fue eliminado  con exito");
+            TextBox1.Text = "";
         }
 
         protected void Button3_Click(object sender, EventArgs e)

@@ -197,6 +197,7 @@
     <Content Include="Recursos\Captura de pantalla %28821%29.png" />
     <Content Include="Recursos\Captura de pantalla %28824%29.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Registrodepuesto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -416,6 +417,13 @@
     </Compile>
     <Compile Include="Puestos2.aspx.designer.cs">
       <DependentUpon>Puestos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrodepuesto.aspx.cs">
+      <DependentUpon>Registrodepuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrodepuesto.aspx.designer.cs">
+      <DependentUpon>Registrodepuesto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

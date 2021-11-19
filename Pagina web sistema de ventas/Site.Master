@@ -56,6 +56,7 @@
                         <li><a runat="server" href="~/Puestos2">Empleados/Puestos</a></li>
                         <li><a runat="server" href="~/Formulario registro">Registro de Usuarios</a></li>
                         <li><a runat="server" href="~/formulario registro empleados">Registro de Empleados</a></li>
+                       <li><a runat="server" href="~/Registrodepuesto">Registro de Puesto/Empleado</a></li> 
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
                     </ul>
