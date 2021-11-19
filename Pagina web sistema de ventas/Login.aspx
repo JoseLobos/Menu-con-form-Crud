@@ -30,7 +30,7 @@
     </p>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" BackColor="#00CCFF" />
     </p>
     <p>
     </p>
