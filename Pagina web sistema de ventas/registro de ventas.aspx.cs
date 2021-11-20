@@ -20,7 +20,7 @@ namespace Pagina_web_sistema_de_ventas
             SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
             conexion.Open();
 
-            string actualizar = "UPDATE Ventas1 SET Id_Usuario=@Id_Usuario,Id_Producto=@Id_Producto, Fecha_de_Venta=@Fecha_de_Venta, Hora_Venta=@Hora_Venta, Total_Venta=@Total_Venta, Efectivo=@Efectivo,Vuelto=@Vuelto,Cantidad=@Cantidad, Id_Venta=@Id_Venta WHERE Id_Venta=@Id_Venta";
+            string actualizar = "UPDATE Ventas1 SET Id_Cliente=@Id_Cliente,Id_Usuario=@Id_Usuario,Id_Producto=@Id_Producto, Fecha_de_Venta=@Fecha_de_Venta, Hora_Venta=@Hora_Venta, Total_Venta=@Total_Venta, Efectivo=@Efectivo,Vuelto=@Vuelto,Cantidad=@Cantidad,Id_Venta=@Id_Venta WHERE Id_Venta=@Id_Venta";
             SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
 
             cmd2.Parameters.AddWithValue("@Id_Usuario", TextBox1.Text);
@@ -31,7 +31,8 @@ namespace Pagina_web_sistema_de_ventas
             cmd2.Parameters.AddWithValue("@Efectivo", TextBox6.Text);
             cmd2.Parameters.AddWithValue("@Vuelto", TextBox7.Text);
             cmd2.Parameters.AddWithValue("@Cantidad", TextBox8.Text);
-            cmd2.Parameters.AddWithValue("@ Id_Venta", TextBox9.Text);
+            cmd2.Parameters.AddWithValue("@Id_Venta", TextBox9.Text);
+            cmd2.Parameters.AddWithValue("@Id_Cliente", TextBox10.Text);
 
             cmd2.ExecuteNonQuery();
             MessageBox.Show("Los datos fueron actualizados con exito");
@@ -45,6 +46,7 @@ namespace Pagina_web_sistema_de_ventas
             TextBox7.Text = "";
             TextBox8.Text = "";
             TextBox9.Text = "";
+            TextBox10.Text = "";
 
         }
 
@@ -52,13 +54,13 @@ namespace Pagina_web_sistema_de_ventas
         {
             {
                 SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
-                string Id_Venta;
-                Id_Venta = (TextBox9.Text);
+                string Id_Usuario;
+                Id_Usuario = (TextBox9.Text);
 
                 SqlCommand consulta_comprobar = new SqlCommand("  Select count(*) From Ventas1 WHERE  Id_Venta=@Id_Venta  ", conexion);
 
                 conexion.Open();
-                consulta_comprobar.Parameters.AddWithValue("@Id_Venta", Id_Venta);
+                consulta_comprobar.Parameters.AddWithValue("@Id_Venta",Id_Usuario);
                 int i;
                 i = Convert.ToInt32(consulta_comprobar.ExecuteScalar());
 
@@ -74,13 +76,14 @@ namespace Pagina_web_sistema_de_ventas
                     TextBox7.Text = "";
                     TextBox8.Text = "";
                     TextBox9.Text = "";
+                    TextBox10.Text = "";
                 }
                 else
                 {
 
                     string cadenaconsulta;
 
-                    cadenaconsulta = "Insert into Ventas1 (Id_Usuario,Id_Producto,Id_Venta, Fecha_de_Venta,Hora_Venta,Total_Venta,Efectivo,Vuelto,Cantidad)values(@Id_Usuario,@Id_Producto,@Fecha_de_Venta,@Hora_Venta,@Total_Venta,@Efectivo,@Vuelto,@Cantidad)";
+                    cadenaconsulta = "Insert into Ventas1 (Id_Cliente,Id_Usuario,Id_Producto, Fecha_de_Venta,Hora_Venta,Total_Venta,Efectivo,Vuelto,Cantidad,Id_Venta)values(@Id_Usuario,@Id_Producto,@Fecha_de_Venta,@Hora_Venta,@Total_Venta,@Efectivo,@Vuelto,@Cantidad,@Id_Venta,@Id_Cliente)";
 
                     SqlCommand consulta_agregar = new SqlCommand(cadenaconsulta, conexion);
                     consulta_agregar.Parameters.AddWithValue("@Id_Usuario", TextBox1.Text);
@@ -91,7 +94,8 @@ namespace Pagina_web_sistema_de_ventas
                     consulta_agregar.Parameters.AddWithValue("@Efectivo", TextBox6.Text);
                     consulta_agregar.Parameters.AddWithValue("@Vuelto", TextBox7.Text);
                     consulta_agregar.Parameters.AddWithValue("@Cantidad", TextBox8.Text);
-                    consulta_agregar.Parameters.AddWithValue("@ Id_Venta", TextBox9.Text);
+                    consulta_agregar.Parameters.AddWithValue("@Id_Venta", TextBox9.Text);
+                    consulta_agregar.Parameters.AddWithValue("@Id_Cliente", TextBox10.Text);
 
 
                     if (i >= 0)
@@ -115,6 +119,7 @@ namespace Pagina_web_sistema_de_ventas
                             TextBox7.Text = "";
                             TextBox8.Text = "";
                             TextBox9.Text = "";
+                            TextBox10.Text = "";
 
                         }
 
