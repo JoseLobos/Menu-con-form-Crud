@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Puestos.aspx.cs" Inherits="Pagina_web_sistema_de_ventas.Puestos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
+    &nbsp;</p>
+<p>
+    &nbsp;</p>
+<p>
+    &nbsp;</p>
+<p>
     <br />
 </p>
 <p>

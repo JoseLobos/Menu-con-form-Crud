@@ -7,9 +7,10 @@ using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Pagina_web_sistema_de_ventas
 {
-    public partial class Registrodepuesto : System.Web.UI.Page
+    public partial class rpuestos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -105,6 +106,32 @@ namespace Pagina_web_sistema_de_ventas
             TextBox2.Text = "";
         }
 
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Button1.Visible = Visible;
+            Button2.Visible = Visible;
+            Button3.Visible = Visible;
+            Button4.Visible = Visible;
+            Button5.Visible = Visible;
+            Button6.Visible = Visible;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Button1.Visible = false;
+            Button2.Visible = false;
+            Button3.Visible = false;
+            Button5.Visible = false;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Button3.Visible = false;
+            Button5.Visible = false;
+            Button6.Visible = false;
+            Button2.Visible = false;
+        }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
@@ -121,31 +148,6 @@ namespace Pagina_web_sistema_de_ventas
             TextBox1.Text = "";
             TextBox2.Text = "";
             DropDownList2.Text = "";
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Button3.Visible = false;
-            Button5.Visible = false;
-            Button6.Visible = false;
-            Button2.Visible = false;
-        }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            Button1.Visible = false;
-            Button2.Visible = false;
-            Button3.Visible = false;
-            Button5.Visible = false;
-        }
-
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            Button1.Visible = Visible;
-            Button2.Visible = Visible;
-            Button3.Visible = Visible;
-            Button4.Visible = Visible;
-            Button5.Visible = Visible;
         }
     }
 }
