@@ -8,7 +8,10 @@
         <asp:Label ID="Label1" runat="server" Text="REGISTRO DE VENTAS"></asp:Label>
     </p>
     <p>
-        &nbsp;</p>
+        <asp:Label ID="Label10" runat="server" Text="Id Usuario"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+    </p>
     <p>
         <asp:Label ID="Label2" runat="server" Text="Id Usuario"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
