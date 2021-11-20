@@ -1,0 +1,91 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="registro de ventas.aspx.cs" Inherits="Pagina_web_sistema_de_ventas.registro_de_ventas" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <p>
+        <br />
+    </p>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="REGISTRO DE VENTAS"></asp:Label>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:Label ID="Label2" runat="server" Text="Id Usuario"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label3" runat="server" Text="Id Producto"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label4" runat="server" Text="Fecha de Venta"></asp:Label>
+&nbsp;
+        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label5" runat="server" Text="Hora de Venta"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label6" runat="server" Text="Total de Venta"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label7" runat="server" Text="Efectivo"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label8" runat="server" Text="Vuelto"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label9" runat="server" Text="Cantidad"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+    <asp:Button ID="Button1" runat="server" BackColor="#66FFFF" Text="Actualizar" Width="81px" OnClick="Button1_Click" />
+&nbsp;
+    <asp:Button ID="Button2" runat="server" BackColor="#66FFFF" Text="Modificar" Width="81px" OnClick="Button2_Click" />
+&nbsp;
+    <asp:Button ID="Button3" runat="server" BackColor="#66FFFF" Text="Nuevo" Width="81px" OnClick="Button3_Click" />
+&nbsp;
+    <asp:Button ID="Button4" runat="server" BackColor="#66FFFF" Text="Cancelar" Width="81px" OnClick="Button4_Click" />
+&nbsp;
+    <asp:Button ID="Button5" runat="server" BackColor="#66FFFF" Text="Eliminar" Width="81px" OnClick="Button5_Click" />
+&nbsp;
+    <asp:Button ID="Button6" runat="server" BackColor="#66FFFF" Text="Guardar" Width="81px" OnClick="Button6_Click" />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</asp:Content>
