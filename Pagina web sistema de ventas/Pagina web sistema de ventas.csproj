@@ -198,6 +198,7 @@
     <Content Include="Recursos\Captura de pantalla %28824%29.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Recursos\Captura de pantalla %28829%29.png" />
+    <Content Include="Registro de compras.aspx" />
     <Content Include="registro de ventas.aspx" />
     <Content Include="Registrodepuesto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -419,6 +420,13 @@
     </Compile>
     <Compile Include="Puestos2.aspx.designer.cs">
       <DependentUpon>Puestos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro de compras.aspx.cs">
+      <DependentUpon>Registro de compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro de compras.aspx.designer.cs">
+      <DependentUpon>Registro de compras.aspx</DependentUpon>
     </Compile>
     <Compile Include="registro de ventas.aspx.cs">
       <DependentUpon>registro de ventas.aspx</DependentUpon>
