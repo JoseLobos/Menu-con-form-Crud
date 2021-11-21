@@ -6,6 +6,24 @@
 <p>
 </p>
 <p class="text-center">
+    &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
     <asp:Label ID="Label1" runat="server" Text="LISTADO DE VENTAS"></asp:Label>
 </p>
 <p>

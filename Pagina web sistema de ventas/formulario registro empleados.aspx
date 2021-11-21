@@ -5,6 +5,12 @@
 <p class="text-center">
     &nbsp;</p>
 <p class="text-center">
+    &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
     &nbsp;<asp:Image ID="Image2" runat="server" ImageUrl="~/Recursos/Captura de pantalla (819).png" />
 </p>
 <p class="text-center">
