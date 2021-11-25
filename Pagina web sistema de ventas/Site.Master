@@ -150,16 +150,19 @@ body {
             </div>
 
             <div class="mynav_navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
+  <a runat="server" href="~/">Inicio</a>
+  <a runat="server" href="~/About">Acerca de</a>
+  <a runat="server" href="~/Contact">Contacto</a>
   <div class="mynav_dropdown">
     <button class="mynav_dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="mynav_dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+       <a runat="server" href="~/formulario registro empleados">Registro de Empleados</a>
+       <a runat="server" href="~/Formulario registro">Registro de Usuarios</a>
+      <a runat="server" href="~/Registro de compras"> Registro Compras</a>
+      <a runat="server" href="~/registro de ventas"> Registro Ventas</a>
+      <a runat="server" href="~/rpuestos">Registro de Puesto/Empleado</a>
     </div>
   </div> 
 </div>
