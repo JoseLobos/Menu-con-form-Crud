@@ -2,9 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
     <h3>&nbsp;</h3>
 <h3>&nbsp;<asp:Image ID="Image1" runat="server" BackColor="#0099CC" BorderColor="#0099CC" ForeColor="#0066CC" Height="218px" ImageUrl="~/Recursos/Captura de pantalla (824).png" Width="333px" />
 </h3>

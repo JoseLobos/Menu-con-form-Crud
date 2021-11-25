@@ -13,12 +13,12 @@
 <address>
     <strong>Sede Central :</strong> Plaza Mundo (Soyapango)<br />
     </address>
-    <address>
-        <strong>Correo :</strong> <br />
-        <a href="mailto:Support@example.com">technologycenter@gmail.com</a></address>
+<address>
+    <strong>Correo :</strong> <br />
+    <a href="mailto:Support@example.com">technologycenter@gmail.com</a></address>
 <address>
     &nbsp;</address>
-    <address>
-        <strong>Numeros de Contacto:</strong> +503 2666-7878 , 2662-9977</address>
+<address>
+    <strong>Numeros de Contacto:</strong> +503 2666-7878 , 2662-9977</address>
 </asp:Content>
 

@@ -201,6 +201,8 @@ body {
     <div class="Consulta-content">
         <a runat="server" href="~/Empleados"> T Empleados/Puestos</a>
         <a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a>
+        <a runat="server" href="~/Consulta usuario"> Usuarios</a>
+        <a runat="server" href="~/Puestos2"> Puestos/Empleados</a>
 </div>
       </div>
 

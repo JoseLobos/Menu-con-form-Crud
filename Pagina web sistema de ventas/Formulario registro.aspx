@@ -51,15 +51,18 @@
     <asp:TextBox ID="TextBox6" runat="server" Width="537px"></asp:TextBox>
     </p>
 <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-    <asp:Button ID="Button1" runat="server" BackColor="#66FFFF" Text="Registrar Usuario" Width="195px" OnClick="Button1_Click" />
-&nbsp;&nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <asp:Button ID="Button2" runat="server" BackColor="#66FFFF" OnClick="Button2_Click" Text="Cancelar" Width="195px" />
+    &nbsp;</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button6" runat="server" BackColor="#66FFFF" Text="Eliminar" Width="86px" OnClick="Button5_Click" />
+    &nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button1" runat="server" BackColor="#66FFFF" Text="Guardar" Width="86px" OnClick="Button1_Click" />
+    &nbsp;&nbsp; &nbsp;<asp:Button ID="Button2" runat="server" BackColor="#66FFFF" OnClick="Button2_Click" Text="Cancelar" Width="86px" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button3" runat="server" BackColor="#66FFFF" Text="Nuevo" Width="86px" OnClick="Button3_Click" />
+&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button4" runat="server" BackColor="#66FFFF" Text="Modificar" Width="86px" OnClick="Button2_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button5" runat="server" BackColor="#66FFFF" Text="Actualizar" Width="86px" OnClick="Button1_Click" />
     </p>
 <p>
 </p>
