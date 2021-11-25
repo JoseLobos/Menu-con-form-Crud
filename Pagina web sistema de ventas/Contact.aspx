@@ -11,14 +11,14 @@
     <address>
         <strong>Si quieres informacion sobre cualquiera de nuestros productos, puedes llamarnos a nuestros numeros telefonicos , o contactarnos por medio de nuestros correo electronicos , Muchas Gracias</strong></address>
 <address>
-    <strong>Sede Central :</strong> Plaza Mundo (Soyapango)</address>
+    <strong>Sede Central :</strong> Plaza Mundo (Soyapango)<br />
+    </address>
+    <address>
+        <strong>Correo :</strong> <br />
+        <a href="mailto:Support@example.com">technologycenter@gmail.com</a></address>
 <address>
-</address>
-<address>
-    <strong>Correo Principal:</strong> <a href="mailto:Support@example.com">technologycenter@gmail.com</a><br />
-    <strong>Correo Secundario:</strong> <a href="mailto:Marketing@example.com">technologycenter1@gmail.com</a>
-</address>
-<address>
-    <strong>Numeros de Contacto:</strong> +503 2666-7878 , 2662-9977</address>
+    &nbsp;</address>
+    <address>
+        <strong>Numeros de Contacto:</strong> +503 2666-7878 , 2662-9977</address>
 </asp:Content>
 
