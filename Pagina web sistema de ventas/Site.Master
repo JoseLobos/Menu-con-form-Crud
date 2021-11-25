@@ -24,7 +24,7 @@ body {
 
 .mynav_navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #re;
 }
 
 .mynav_navbar a {
@@ -79,6 +79,72 @@ body {
 }
 
 .mynav_dropdown:hover .mynav_dropdown-content {
+  display: block;
+}
+</style>
+
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navcar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navcar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Consulta {
+  float: left;
+  overflow: hidden;
+}
+
+.Consulta .Consulbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navcar a:hover, .Consulta:hover .Consulbtn {
+  background-color: red;
+}
+
+.Consulta-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Consulta-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.Consulta-content a:hover {
+  background-color: #ddd;
+}
+
+.Consulta:hover .Consulta-content {
   display: block;
 }
 </style>
@@ -165,7 +231,19 @@ body {
       <a runat="server" href="~/rpuestos">Registro de Puesto/Empleado</a>
     </div>
   </div> 
+
+
+                  <div class="Consulta">
+  
+  <div class="mynav_Consulta">
+    <button class="Consulbtn">Consulta
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Consulta-content">
+        <a runat="server" href="~/Empleados"> T Empleados/Puestos</a>
+        <a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a>
 </div>
+      </div>
 
         </div>
         <div class="container body-content">
