@@ -24,13 +24,13 @@ body {
 
 .mynav_navbar {
   overflow: hidden;
-  background-color: #re;
+  background-color: #00ffff;
 }
 
 .mynav_navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -45,7 +45,7 @@ body {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -90,13 +90,13 @@ body {
 
 .navcar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #00ffff;
 }
 
 .navcar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -111,7 +111,7 @@ body {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -172,55 +172,14 @@ body {
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">APP Sistema de Ventas</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Empleados"> T Empleados/Puestos</a></li>
-                         <li><a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a></li>
-                        <li><a runat="server" href="~/Registro de compras"> Registro Compras</a></li>
-                        <li><a runat="server" href="~/registro de ventas"> Registro Ventas</a></li>
-                        <li><a runat="server" href="~/Puestos2">Empleados/Puestos</a></li>
-                        <li><a runat="server" href="~/Formulario registro">Registro de Usuarios</a></li>
-                        <li><a runat="server" href="~/formulario registro empleados">Registro de Empleados</a></li>
-                       <li><a runat="server" href="~/rpuestos">Registro de Puesto/Empleado</a></li> 
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
-                        
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hola. <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
+        
 
             <div class="mynav_navbar">
   <a runat="server" href="~/">Inicio</a>
   <a runat="server" href="~/About">Acerca de</a>
   <a runat="server" href="~/Contact">Contacto</a>
   <div class="mynav_dropdown">
-    <button class="mynav_dropbtn">Dropdown 
+    <button class="mynav_dropbtn">Registros 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="mynav_dropdown-content">
