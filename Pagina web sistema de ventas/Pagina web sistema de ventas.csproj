@@ -193,6 +193,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <Content Include="Login.aspx" />
+    <Content Include="Productos,Existencias.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Puestos2.aspx" />
     <Content Include="Recursos\Captura de pantalla %28819%29.png" />
@@ -423,6 +424,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Productos,Existencias.aspx.cs">
+      <DependentUpon>Productos,Existencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos,Existencias.aspx.designer.cs">
+      <DependentUpon>Productos,Existencias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

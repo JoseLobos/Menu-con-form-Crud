@@ -75,7 +75,7 @@ body {
 }
 
 .mynav_dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #f00;
 }
 
 .mynav_dropdown:hover .mynav_dropdown-content {
@@ -141,7 +141,7 @@ body {
 }
 
 .Consulta-content a:hover {
-  background-color: #ddd;
+  background-color: #f00;
 }
 
 .Consulta:hover .Consulta-content {
@@ -204,6 +204,7 @@ body {
         <a runat="server" href="~/Empleados"> T Empleados/Puestos</a>
         <a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a>
         <a runat="server" href="~/Consulta usuario"> Usuarios</a>
+        <a runat="server" href="~/Productos,Existencias"> Productos/Existencias</a>
         <a runat="server" href="~/Puestos2"> Puestos/Empleados</a>
 </div>
       </div>

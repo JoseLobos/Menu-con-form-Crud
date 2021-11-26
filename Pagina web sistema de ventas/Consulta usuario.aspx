@@ -10,9 +10,19 @@
 <p>
 </p>
 <p class="text-center">
+    &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+<p class="text-center">
     LISTADO DE USUARIOS EN EL SISTEMA</p>
-<p>
-</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
 <p>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2">
         <Columns>
