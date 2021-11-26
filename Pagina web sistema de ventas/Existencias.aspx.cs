@@ -134,5 +134,13 @@ namespace Pagina_web_sistema_de_ventas
             MessageBox.Show(" el producto fue eliminado");
             TextBox1.Text = "";
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Button3.Visible = false;
+            Button5.Visible = false;
+            Button1.Visible = false;
+            Button2.Visible = false;
+        }
     }
 }
