@@ -100,5 +100,52 @@ namespace Pagina_web_sistema_de_ventas
 
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
+            conexion.Open();
+
+            string actualizar = "UPDATE Productos SET Codigo_Producto=@Codigo_Producto,Nombre_del_Producto=@Nombre_del_Producto,Cantidad=@Cantidad,Valor_Unitario=@Valor_Unitario, Valor_Total=@Valor_Total, Codigo_de_Barra=@Codigo_de_Barra WHERE Codigo_Producto=@Codigo_Producto";
+            SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
+
+            cmd2.Parameters.AddWithValue("@Codigo_Producto", TextBox1.Text);
+            cmd2.Parameters.AddWithValue("@Nombre_del_Producto", TextBox2.Text);
+            cmd2.Parameters.AddWithValue("@Cantidad", TextBox3.Text);
+            cmd2.Parameters.AddWithValue("@Valor_Unitario", TextBox4.Text);
+            cmd2.Parameters.AddWithValue("@Valor_Total", TextBox5.Text);
+            cmd2.Parameters.AddWithValue("@Efectivo", TextBox6.Text);
+          ;
+
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Los datos fueron actualizados con exito");
+
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+            TextBox6.Text = "";
+           
+
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
+
+            conexion.Open();
+            string eliminar;
+
+            eliminar = "DELETE FROM Productos WHERE Codigo_Producto=@Codigo_Producto";
+
+            SqlCommand cmd = new SqlCommand(eliminar, conexion);
+
+            cmd.Parameters.AddWithValue("@Codigo_Producto", TextBox1.Text);
+            cmd.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show(" La venta fue eliminada");
+            TextBox1.Text = "";
+        }
     }
 }
