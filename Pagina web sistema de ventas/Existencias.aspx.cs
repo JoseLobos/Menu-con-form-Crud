@@ -94,26 +94,7 @@ namespace Pagina_web_sistema_de_ventas
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
-            conexion.Open();
-
-            string actualizar = "UPDATE Existencias1 SET Id_Producto=@Id_Producto,Cantidad=@Cantidad,Codigo_de_Barra=@Codigo_de_Barra,Nombre_del_Producto=@Nombre_del_Producto WHERE Id_Producto=@Id_Producto";
-            SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
-
-            cmd2.Parameters.AddWithValue("@Id_Producto", TextBox1.Text);
-            cmd2.Parameters.AddWithValue("@Cantidad", TextBox2.Text);
-            cmd2.Parameters.AddWithValue("@Codigo_de_Barra", TextBox3.Text);
-            cmd2.Parameters.AddWithValue("@Nombre_del_Producto", TextBox4.Text);
            
-            ;
-
-            cmd2.ExecuteNonQuery();
-            MessageBox.Show("Los datos fueron actualizados con exito");
-
-            TextBox1.Text = "";
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
            
         }
 
@@ -140,7 +121,54 @@ namespace Pagina_web_sistema_de_ventas
             Button3.Visible = false;
             Button5.Visible = false;
             Button1.Visible = false;
-            Button2.Visible = false;
+            Button7.Visible = false;
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            Button3.Visible = false;
+            Button6.Visible = false;
+            Button5.Visible = false;
+            Button7.Visible = false;
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
+            conexion.Open();
+
+            string actualizar = "UPDATE Existencias1 SET Id_Producto=@Id_Producto,Cantidad=@Cantidad,Codigo_de_Barra=@Codigo_de_Barra,Nombre_del_Producto=@Nombre_del_Producto WHERE Id_Producto=@Id_Producto";
+            SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
+
+            cmd2.Parameters.AddWithValue("@Id_Producto", TextBox1.Text);
+            cmd2.Parameters.AddWithValue("@Cantidad", TextBox2.Text);
+            cmd2.Parameters.AddWithValue("@Codigo_de_Barra", TextBox3.Text);
+            cmd2.Parameters.AddWithValue("@Nombre_del_Producto", TextBox4.Text);
+
+            ;
+
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Los datos fueron actualizados con exito");
+
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Button1.Visible = Visible;
+            Button7.Visible = Visible;
+            Button3.Visible = Visible;
+            Button4.Visible = Visible;
+            Button5.Visible = Visible;
+            Button6.Visible = Visible;
         }
     }
 }

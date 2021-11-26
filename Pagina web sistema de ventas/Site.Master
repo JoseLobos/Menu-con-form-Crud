@@ -184,10 +184,12 @@ body {
     </button>
     <div class="mynav_dropdown-content">
        <a runat="server" href="~/formulario registro empleados">Registro de Empleados</a>
-       <a runat="server" href="~/Formulario registro">Registro de Usuarios</a>
-      <a runat="server" href="~/Registro de compras"> Registro Compras</a>
-      <a runat="server" href="~/registro de ventas"> Registro Ventas</a>
-      <a runat="server" href="~/rpuestos">Registro de Puesto/Empleado</a>
+       <a runat="server" href="~/Formulario registro"> Usuarios</a>
+      <a runat="server" href="~/Registro de compras"> Compras</a>
+      <a runat="server" href="~/registro de ventas">  Ventas</a>
+      <a runat="server" href="~/rpuestos"> Puesto/Empleado</a>
+        <a runat="server" href="~/Existencias">Existencias</a>
+        <a runat="server" href="~/Productos">Productos</a>
     </div>
   </div> 
 

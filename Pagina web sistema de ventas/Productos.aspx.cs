@@ -51,7 +51,7 @@ namespace Pagina_web_sistema_de_ventas
 
                     string cadenaconsulta;
 
-                    cadenaconsulta = "Insert into Ventas1 (Codigo_Producto,Nombre_del_Producto,Cantidad, Valor_Unitario,Valor_Total,Codigo_de_Barra)values(@Codigo_Producto,@Nombre_del_Producto,@Cantidad,@Valor_Unitario,@Valor_Total,@Codigo_de_Barra)";
+                    cadenaconsulta = "Insert into Productos (Codigo_Producto,Nombre_del_Producto,Cantidad, Valor_Unitario,Valor_Total,Codigo_de_Barra)values(@Codigo_Producto,@Nombre_del_Producto,@Cantidad,@Valor_Unitario,@Valor_Total,@Codigo_de_Barra)";
 
                     SqlCommand consulta_agregar = new SqlCommand(cadenaconsulta, conexion);
                     consulta_agregar.Parameters.AddWithValue("@Codigo_Producto", TextBox1.Text);
@@ -114,7 +114,7 @@ namespace Pagina_web_sistema_de_ventas
             cmd2.Parameters.AddWithValue("@Cantidad", TextBox3.Text);
             cmd2.Parameters.AddWithValue("@Valor_Unitario", TextBox4.Text);
             cmd2.Parameters.AddWithValue("@Valor_Total", TextBox5.Text);
-            cmd2.Parameters.AddWithValue("@Efectivo", TextBox6.Text);
+            cmd2.Parameters.AddWithValue("@Codigo_de_Barra", TextBox6.Text);
           ;
 
             cmd2.ExecuteNonQuery();
