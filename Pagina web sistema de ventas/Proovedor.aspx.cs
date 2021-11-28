@@ -57,6 +57,7 @@ namespace Pagina_web_sistema_de_ventas
                     consulta_agregar.Parameters.AddWithValue("@Codigo_del_Proovedor", TextBox3.Text);
                     consulta_agregar.Parameters.AddWithValue("@Cantidad", TextBox4.Text);
                     consulta_agregar.Parameters.AddWithValue("@Direccion", TextBox5.Text);
+            
                     consulta_agregar.Parameters.AddWithValue("@Numero_de_Telefono", TextBox6.Text);
                     consulta_agregar.Parameters.AddWithValue("@Departamento", TextBox7.Text);
                     consulta_agregar.Parameters.AddWithValue("@Correo", TextBox8.Text);

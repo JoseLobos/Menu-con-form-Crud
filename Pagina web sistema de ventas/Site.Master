@@ -190,6 +190,7 @@ body {
       <a runat="server" href="~/rpuestos"> Puesto/Empleado</a>
         <a runat="server" href="~/Existencias">Existencias</a>
         <a runat="server" href="~/Productos">Productos</a>
+        >
     </div>
   </div> 
 

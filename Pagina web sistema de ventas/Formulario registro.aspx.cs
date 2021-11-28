@@ -18,18 +18,12 @@ namespace Pagina_web_sistema_de_ventas
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Button3.Visible = false;
-            Button6.Visible = false;
-            Button5.Visible = false;
-            Button2.Visible = false;
+           
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Button3.Visible = false;
-            Button4.Visible = false;
-            Button5.Visible = false;
-            Button6.Visible = false;
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -112,15 +106,50 @@ namespace Pagina_web_sistema_de_ventas
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Button1.Visible = Visible;
-            Button2.Visible = Visible;
-            Button3.Visible = Visible;
-            Button4.Visible = Visible;
-            Button5.Visible = Visible;
-            Button6.Visible = Visible;
+            
         }
 
         protected void Button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+           
+            
+
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Login;Integrated Security=True");
+            conexion.Open();
+
+            string actualizar = "UPDATE Usuarios SET Id_usuario=@Id_usuario,Usuario=@Usuario,Clave=@Clave, Correo=@Correo, Nivel=@Nivel, Direccion=@Direccion WHERE Id_usuario=@Id_usuario";
+            SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
+
+            cmd2.Parameters.AddWithValue("@Id_usuario", TextBox4.Text);
+            cmd2.Parameters.AddWithValue("@Usuario", TextBox1.Text);
+            cmd2.Parameters.AddWithValue("@Clave", TextBox2.Text);
+            cmd2.Parameters.AddWithValue("@Correo", TextBox3.Text);
+            cmd2.Parameters.AddWithValue("@Nivel", TextBox5.Text);
+            cmd2.Parameters.AddWithValue("@Direccion", TextBox6.Text);
+
+
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Los datos fueron actualizados con exito");
+
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+            TextBox6.Text = "";
+
+        }
+
+        protected void Button8_Click(object sender, EventArgs e)
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Login;Integrated Security=True");
 
@@ -138,33 +167,14 @@ namespace Pagina_web_sistema_de_ventas
             TextBox4.Text = "";
         }
 
-        protected void Button5_Click(object sender, EventArgs e)
+        protected void Button9_Click(object sender, EventArgs e)
         {
-            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Login;Integrated Security=True");
-            conexion.Open();
-
-            string actualizar = "UPDATE Usuarios SET Id_usuario=@Id_usuario,Usuario=@Usuario,Clave=@Clave, Correo=@Correo, Nivel=@Nivel, Direccion=@Direccion WHERE Id_usuario=@Id_usuario";
-            SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
-
-            cmd2.Parameters.AddWithValue("@Id_usuario", TextBox4.Text);
-            cmd2.Parameters.AddWithValue("@Usuario", TextBox1.Text);
-            cmd2.Parameters.AddWithValue("@Clave", TextBox2.Text);
-            cmd2.Parameters.AddWithValue("@Correo", TextBox3.Text);
-            cmd2.Parameters.AddWithValue("@Nivel", TextBox5.Text);
-            cmd2.Parameters.AddWithValue("@Direccion", TextBox6.Text);
-            
-
-            cmd2.ExecuteNonQuery();
-            MessageBox.Show("Los datos fueron actualizados con exito");
-
-            TextBox1.Text = "";
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-            TextBox5.Text = "";
-            TextBox6.Text = "";
-            
-
+            Button1.Visible = Visible;
+            Button3.Visible = Visible;
+            Button4.Visible = Visible;
+            Button7.Visible = Visible;
+            Button8.Visible = Visible;
+            Button9.Visible = Visible;
         }
     }
 }
