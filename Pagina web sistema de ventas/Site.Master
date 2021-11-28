@@ -205,7 +205,7 @@ body {
         <a runat="server" href="~/Ventas,Compras"> T Ventas/Compras</a>
         <a runat="server" href="~/Consulta usuario"> Usuarios</a>
         <a runat="server" href="~/Productos,Existencias"> Productos/Existencias</a>
-        <a runat="server" href="~/Puestos2"> Puestos/Empleados</a>
+        
 </div>
       </div>
 

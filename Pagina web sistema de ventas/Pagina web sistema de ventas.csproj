@@ -196,7 +196,6 @@
     <Content Include="Productos,Existencias.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Proovedor.aspx" />
-    <Content Include="Puestos2.aspx" />
     <Content Include="Recursos\Captura de pantalla %28819%29.png" />
     <Content Include="Recursos\Captura de pantalla %28821%29.png" />
     <Content Include="Recursos\Captura de pantalla %28824%29.png" />
@@ -447,13 +446,6 @@
       <DependentUpon>Proovedor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Puestos2.aspx.cs">
-      <DependentUpon>Puestos2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Puestos2.aspx.designer.cs">
-      <DependentUpon>Puestos2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Registro de compras.aspx.cs">
       <DependentUpon>Registro de compras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
